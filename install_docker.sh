@@ -17,16 +17,22 @@ echo \
   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 
 # Update package information and install Docker
+echo "sudo apt-get update"
 sudo apt-get update
+echo "sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin"
 sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
 # Start the Docker service
+echo "sudo service docker start"
 sudo service docker start
 
+
 # Add the current user to the "docker" group
+echo "sudo usermod -aG docker $USER"
 sudo usermod -aG docker $USER
 
 # Test install 
+echo "docker run hello-world"
 docker run hello-world
 
 # Print a message indicating the installation was successful
