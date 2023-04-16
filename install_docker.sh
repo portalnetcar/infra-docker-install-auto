@@ -33,6 +33,7 @@ sudo service docker start
 # Add the current user to the "docker" group
 echo "sudo usermod -aG docker $USER"
 sudo usermod -aG docker $USER
+sleep 2
 sudo chown "$USER":"$USER" /var/run/docker.sock -R
 sudo chmod g+rwx  /var/run/docker.sock -R
 
