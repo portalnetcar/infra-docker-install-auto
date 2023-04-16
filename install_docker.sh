@@ -31,6 +31,8 @@ sudo service docker start
 # Add the current user to the "docker" group
 echo "sudo usermod -aG docker $USER"
 sudo usermod -aG docker $USER
+sudo chown "$USER":"$USER" /home/"$USER"/.docker -R
+sudo chmod g+rwx "$HOME/.docker" -R
 
 # Test install 
 echo "docker run hello-world"
