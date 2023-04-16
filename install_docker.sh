@@ -22,6 +22,7 @@ sudo apt-get update
 echo "sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin"
 sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
+sleep 2
 # Start the Docker service
 echo "sudo service docker start"
 sudo service docker start
