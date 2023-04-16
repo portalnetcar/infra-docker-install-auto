@@ -24,6 +24,8 @@ sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plug
 
 sleep 2
 # Start the Docker service
+sudo systemctl enable docker.service
+sudo systemctl enable containerd.service
 echo "sudo service docker start"
 sudo service docker start
 
