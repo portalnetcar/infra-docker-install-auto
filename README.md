@@ -4,7 +4,7 @@
 ## HowTo use?
 - Run the following command:
 ```
-curl -fsSL https://raw.githubusercontent.com/leosavio/infra-docker-install-auto/main/install_docker.sh | bash
+curl -fsSL https://raw.githubusercontent.com/portalnetcar/infra-docker-install-auto/main/install_docker.sh | bash
 
 ```
 - This command downloads the script and pipes it directly to bash for execution. The script will install Docker as described in the script.
